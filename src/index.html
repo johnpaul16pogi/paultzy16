@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Paul Baes - Pro ML Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="heheh.jpeg " alt="John Paul Baes" class="profile-pic">
+        <h1>John Paul Baes</h1>
+        <p>Hi! I'm John Paul, a Professional Mobile Legends Player. Let's dominate the game together!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>   
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m John Paul, a 20-year-old professional Mobile Legends player. I’ve been competing at a high level and always aim to be the best in the game. Let’s go for Mythic!</p>
+    </section>  
+
+    <section id="skills">
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td style="text-align: center;"><b>ML Player</b></td>
+                    <td>I’ve mastered the art of Mobile Legends, with precise hero mechanics, game knowledge, and teamwork. I lead my team to victory with tactical plays and quick decision-making.</td>
+                </tr>
+                <tr class="even">
+                    <td style="text-align: center;"><b>Leader</b></td>
+                    <td>As a team captain, I’ve learned to manage team dynamics, give clear instructions, and boost morale, ensuring the team performs at its peak.</td>
+                </tr>
+                <tr class="odd">
+                    <td style="text-align: center;"><b>Strategist</b></td>
+                    <td>I specialize in reading the map and formulating strategies to outplay opponents. My planning helps us turn the tide of tough matches.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="hobbies" style="text-align: center;">
+        <h2>Hobbies</h2>
+        <p>Here are a few hobbies I enjoy when I'm not playing Mobile Legends.</p>
+        <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
+            <li style="margin: 10px;">
+                <img src="games.jpg" alt="gaming" class="hobby-pic">
+                <h3>Gaming</h3>
+            </li>
+            <li style="margin: 10px;">
+                <img src="gym.jpg" alt="fitness" class="hobby-pic">
+                <h3>Fitness</h3>
+            </li>
+            <li style="margin: 10px;">
+                <img src="song.jpg" alt="music" class="hobby-pic">
+                <h3>Listening to Music</h3>
+            </li>
+            <li style="margin: 10px;">
+                <img src="food.jpg" alt="food" class="hobby-pic">
+                <h3>Foodie</h3>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <h3><a href="https://www.facebook.com/johnpaulbaes">FB: John Paul Baes</a></h3>
+        &#9742 09123456789 <br>
+        <p>&#9993 <a href="mailto:johnpaulbaes@gmail.com">johnpaulbaes@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Paul Baes</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetID = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetID);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
